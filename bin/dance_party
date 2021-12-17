@@ -1,10 +1,17 @@
-#!/usr/bin/env ruby
+# !/usr/bin/env ruby
 
 require_relative "../lib/kid"
 require_relative "../lib/dancer"
 
 angelina = Kid.new("Angelina")
+angelina.twirl
+angelina.jump
+
+buster = Kid.new("Buster")
+buster.jump
+buster.take_a_bow
+
 mikhail_baryshnikov = Dancer.new("Mikhail")
 
-puts "#{angelina.name} says: #{angelina.twirl}"
+puts "#{buster.name} says: #{buster.jump}"
 puts "#{mikhail_baryshnikov.name} says: #{mikhail_baryshnikov.take_a_bow}"
